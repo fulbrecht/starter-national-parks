@@ -129,3 +129,33 @@ const main = () => {
 }
 
 window.addEventListener("DOMContentLoaded", main)
+
+
+import "./index.css";
+
+/*
+ Your solution here
+ */
+
+const submitHandler = (event) => {
+  event.preventDefault()
+  
+  const form = event.target
+  const search = document.querySelector("#searchTerm").value;
+  
+  console.log("test")
+  
+}
+
+function validateInput(input){
+  return input && input.trim()
+}
+
+const main = () => {
+  const form = document.querySelector("#searchForm")
+  
+  form.addEventListener("submit", submitHandler)
+  console.log('test')
+}
+
+window.addEventListener("DOMContentLoaded", main)
